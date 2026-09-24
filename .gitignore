@@ -1,0 +1,47 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# ---- 打包产物（体积很大，且可由 packaging/build.py 重新生成）----
+packaging/build/
+packaging/dist/
+packaging/output/
+packaging/_tools/
+packaging/_verify/
+packaging/_dbg/
+packaging/_probeout/
+*.spec.bak
+
+# ---- 测试与调试产物 ----
+tools/_out/
+tools/_history.json
+tools/_*.log
+tools/_*.txt
+tools/_*.json
+_*.txt
+*.log
+
+# ---- 本机上跑出来的应用数据（含个人路径 / 凭据，绝不入库）----
+app_data/
+cookies/
+*.cookies.txt
+webprofile/
+guestprofile/
+
+# ---- yt-dlp 上游源码副本（11.8 MB，仅作参考；请自行从上游获取）----
+yt-dlp-master/
+
+# ---- 开发过程笔记（含本机路径与个人环境信息，不适合公开）----
+.workbuddy/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini

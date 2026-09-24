@@ -1,0 +1,9 @@
+# yt-dlp 图形用户界面 —— 运行依赖
+#
+# 说明：程序运行时会自己管理 yt-dlp 与 ffmpeg（下载到 %APPDATA%\YtDlpGui），
+# 这里列出的是启动主程序所必需的基础依赖。
+PySide6>=6.6
+yt-dlp>=2024.1.1
+
+# 「访客 Cookie」功能需要：通过 Chrome DevTools 协议读取浏览器的访客身份
+websockets>=12
